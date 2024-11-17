@@ -152,6 +152,6 @@ for txt in all_txt:
     assert Q_idx == 5, str(Q_idx) +"\t"+ txt
     
 df = pd.DataFrame(infos)
-df.to_csv("/Work20/2023/wangtianrui/codes/law/benchmark/data_627/info.csv", index=False, encoding='utf-8-sig')
+df.to_csv("/Work20/2023/temp/codes/law/benchmark/data_627/info.csv", index=False, encoding='utf-8-sig')
     
         
