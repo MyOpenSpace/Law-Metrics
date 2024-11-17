@@ -299,7 +299,7 @@ def filter_out_numeric_strings(input_list):
 class Metric():
     def __init__(self):
         super(Metric, self).__init__()
-        self.tok = hanlp.load(r"/Work20/2023/wangtianrui/codes/law/coarse_electra_small_20220616_012050")
+        self.tok = hanlp.load(r"/Work20/2023/temp/codes/law/coarse_electra_small_20220616_012050")
         self.nlp_pos = spacy.load("zh_core_web_sm")
     
     def nouns(self, estimation, label):
@@ -693,8 +693,8 @@ class Metric():
 if __name__ == "__main__":
     import pandas as pd
     parser=argparse.ArgumentParser()
-    parser.add_argument('--ref', type=str, default="/Work20/2023/wangtianrui/codes/law/benchmark/data_627/info.csv")
-    parser.add_argument('--est', type=str, default="/Work20/2023/wangtianrui/codes/law/benchmark/datas/results_filted/resulternie_3.5_8k.csv")
+    parser.add_argument('--ref', type=str, default="/Work20/2023/temp/codes/law/benchmark/data_627/info.csv")
+    parser.add_argument('--est', type=str, default="/Work20/2023/temp/codes/law/benchmark/datas/results_filted/resulternie_3.5_8k.csv")
     args = parser.parse_args()
     
     m = Metric()
@@ -762,7 +762,7 @@ if __name__ == "__main__":
         # print("第%d个案例的结果: \n"%idx + json.dumps(scores, indent=4,))
         # input()
     json_save = os.path.join(
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/eval_json",
+        "/Work20/2023/temp/codes/law/benchmark/datas/eval_json",
         os.path.basename(est_csv_path)
     )
     with open(json_save, 'w') as json_file:
