@@ -136,20 +136,20 @@ def norm_result(text):
     return "\n".join(temps)
 
 if __name__ == "__main__":
-    save_home = r"/Work20/2023/wangtianrui/codes/law/benchmark/datas/results_filted"
+    save_home = r"/Work20/2023/temp/codes/law/benchmark/datas/results_filted"
     result_csvs = [
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultchatgpt.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultchatlaw.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultclaude.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultdoubao.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resulternie_3.5_8k.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultglm.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultkimi.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultminimax.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultqianfan_llama2.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultqwen.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultxuanyuan.csv",
-        "/Work20/2023/wangtianrui/codes/law/benchmark/datas/results/resultYi.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultchatgpt.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultchatlaw.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultclaude.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultdoubao.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resulternie_3.5_8k.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultglm.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultkimi.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultminimax.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultqianfan_llama2.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultqwen.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultxuanyuan.csv",
+        "/Work20/2023/temp/codes/law/benchmark/datas/results/resultYi.csv",
     ]
     for result_csv_path in result_csvs:
         result_csv = pd.read_csv(result_csv_path)
