@@ -39,7 +39,7 @@ def convert_docx_to_txt(docx_file, txt_file):
         for para in doc.paragraphs:
             f.write(para.text + '\n')
 
-for path in get_all_wavs(r"/Work20/2023/wangtianrui/codes/law/benchmark/data_627"):
+for path in get_all_wavs(r"/Work20/2023/temp/codes/law/benchmark/data_627"):
     if path.find("__MACOSX") != -1:
         continue
     save_tgt = path.replace(".docx", ".txt").replace(".doc", ".txt")
